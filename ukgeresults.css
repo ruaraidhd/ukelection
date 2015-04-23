@@ -8,10 +8,22 @@ ul {
 	margin: 2px;
 }
 
+.hashflag-large {
+display: inline;
+	width: 50px;
+	margin: 2px;
+}
+
 footer {
 	text-align: right;
 }
 
 path {
 	transition: 1s;
+}
+
+.results-table {
+	font-size: x-large;
+	text-align: center;
+	font-weight: bold;
 }

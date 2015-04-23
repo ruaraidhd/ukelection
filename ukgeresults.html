@@ -26,7 +26,7 @@
 </body>
 
 <template name="results">
-	<ul id="results_list">
+<!-- 	<ul id="results_list">
 	    <li><img class="hashflag" src="hashflags/conservative.png" />Conservatives: <span id="tory_number">{{tory_seats.count}}</span></li>
 	    <li><img class="hashflag" src="hashflags/labour.png" />Labour: <span id="labour_number">{{labour_seats.count}}</span></li>
 	    <li><img class="hashflag" src="hashflags/libdems.png" />Lib Dem: <span id="libdem_number">{{libdem_seats.count}}</span></li>
@@ -34,7 +34,29 @@
 	    <li><img class="hashflag" src="hashflags/ukip.png" />UKIP: <span id="ukip_number">{{ukip_seats.count}}</span></li>
 	    <li><img class="hashflag" src="hashflags/greens.png" />Green: <span id="green_number">{{green_seats.count}}</span></li>
 	    <li><img class="hashflag" src="hashflags/plaid15.png">Plaid Cymru: <span id="plaid_number">{{plaid_seats.count}}</span></li>
-	</ul>
+	</ul> -->
+
+	<table class="results-table">
+		<tr>
+			<td>{{tory_seats.count}}</td>
+			<td>{{labour_seats.count}}</td>
+			<td>{{libdem_seats.count}}</td>
+			<td>{{snp_seats.count}}</td>
+			<td>{{ukip_seats.count}}</td>
+			<td>{{green_seats.count}}</td>
+			<td>{{plaid_seats.count}}</td>
+		</tr>
+		<tr>
+			<td><img class="hashflag-large" src="hashflags/conservative.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/labour.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/libdems.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/snp.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/ukip.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/greens.png" /></td>
+			<td><img class="hashflag-large" src="hashflags/plaid15.png"></td>
+		</tr>
+
+	</table>
 
 </template>
 

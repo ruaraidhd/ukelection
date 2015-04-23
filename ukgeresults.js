@@ -131,6 +131,7 @@ if (Meteor.isClient) {
     }
   });
 
+
 Tracker.autorun(function(computation){
   // svgUpdate(); 
 });
