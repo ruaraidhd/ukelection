@@ -1,0 +1,72 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UK General Election Results 2015</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><span class="flag flag-uk" > </span> UK Election 2015</a>
+			
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8">{{> map}}</div>
+		<div class="col-md-4">{{> results}} {{> change}}</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">Created by <a href="http://www.twitter.com/ruaraidhdobson">Ruaraidh Dobson</a></p>
+	</div>
+</footer>
+</body>
+
+<template name="results">
+	<ul id="results_list">
+	    <li><img class="hashflag" src="hashflags/conservative.png" />Conservatives: <span id="tory_number">{{tory_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/labour.png" />Labour: <span id="labour_number">{{labour_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/libdems.png" />Lib Dem: <span id="libdem_number">{{libdem_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/snp.png" />SNP: <span id="snp_number">{{snp_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/ukip.png" />UKIP: <span id="ukip_number">{{ukip_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/greens.png" />Green: <span id="green_number">{{green_seats.count}}</span></li>
+	    <li><img class="hashflag" src="hashflags/plaid15.png">Plaid Cymru: <span id="plaid_number">{{plaid_seats.count}}</span></li>
+	</ul>
+
+</template>
+
+<template name="map">
+	<div id="svg_container">
+		<svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1020 996" preserveAspectRatio="xMinYMin"></svg>
+	</div>
+</template>
+
+<template name="change">
+     <div id="change">
+		<div class="ui-widget form-group">
+		<form id="tags-form">
+		    <label for="tags-input">Seat: </label>
+		    <input id="tags-input" class="form-control">
+	    </form>
+		</div>
+        <ul id='parties_list'>
+        	<li><a href='#' class="btn btn-default party_choice" id="tory"><img class="hashflag" src="hashflags/conservative.png" />Conservative</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="labour"><img class="hashflag" src="hashflags/labour.png" />Labour</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="libdem"><img class="hashflag" src="hashflags/libdems.png" />Lib Dems</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="ukip"><img class="hashflag" src="hashflags/ukip.png" />UKIP</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="snp"><img class="hashflag" src="hashflags/snp.png" />SNP</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="green"><img class="hashflag" src="hashflags/greens.png" />Greens</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="pc"><img class="hashflag" src="hashflags/plaid15.png" />Plaid Cymru</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="sf"><img class="hashflag" src="hashflags/sinnfein.png" />Sinn Fein</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="uup"><img class="hashflag" src="hashflags/uup.jpeg" />UUP</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="dup"><img class="hashflag" src="hashflags/dup.png" />DUP</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="sdlp"><img class="hashflag" src="hashflags/sdlp.png" />SDLP</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="alliance"><img class="hashflag" src="hashflags/allianceparty.png" />Alliance</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="ind">Independent</a></li>
+            <li><a href='#' class="btn btn-default party_choice" id="undeclared">Undeclared</a></li>
+        </ul>
+    </div>
+</template>
