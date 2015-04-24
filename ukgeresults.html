@@ -12,10 +12,12 @@
 		</div>
 	</div>
 </nav>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">{{> map}}</div>
-		<div class="col-md-4">{{> results}} {{> change}}</div>
+		<div class="col-md-4"><div class="results-and-change">{{> results}} {{> change}}</div></div>
+		
 	</div>
 </div>
 <footer class="footer">
@@ -36,16 +38,8 @@
 	    <img class="hashflag" src="hashflags/plaid15.png">Plaid Cymru: <span id="plaid_number">{{plaid_seats.count}}</span>
 	</ul> -->
 
+
 	<table class="results-table">
-		<tr>
-			<td>{{tory_seats.count}}</td>
-			<td>{{labour_seats.count}}</td>
-			<td>{{libdem_seats.count}}</td>
-			<td>{{snp_seats.count}}</td>
-			<td>{{ukip_seats.count}}</td>
-			<td>{{green_seats.count}}</td>
-			<td>{{plaid_seats.count}}</td>
-		</tr>
 		<tr>
 			<td><img class="hashflag-large" src="hashflags/conservative.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/labour.png" /></td>
@@ -54,6 +48,15 @@
 			<td><img class="hashflag-large" src="hashflags/ukip.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/greens.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/plaid15.png"></td>
+		</tr>
+		<tr>
+			<td>{{tory_seats.count}}</td>
+			<td>{{labour_seats.count}}</td>
+			<td>{{libdem_seats.count}}</td>
+			<td>{{snp_seats.count}}</td>
+			<td>{{ukip_seats.count}}</td>
+			<td>{{green_seats.count}}</td>
+			<td>{{plaid_seats.count}}</td>
 		</tr>
 
 	</table>
@@ -79,15 +82,15 @@
 	        	<a href='#' class="btn btn-default party_choice" id="tory"><img class="hashflag" src="hashflags/conservative.png" />Conservative</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="labour"><img class="hashflag" src="hashflags/labour.png" />Labour</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="libdem"><img class="hashflag" src="hashflags/libdems.png" />Lib Dems</a><br />
-	            <a href='#' class="btn btn-default party_choice" id="ukip"><img class="hashflag" src="hashflags/ukip.png" />UKIP</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="snp"><img class="hashflag" src="hashflags/snp.png" />SNP</a><br />
+	            <a href='#' class="btn btn-default party_choice" id="ukip"><img class="hashflag" src="hashflags/ukip.png" />UKIP</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="green"><img class="hashflag" src="hashflags/greens.png" />Greens</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="pc"><img class="hashflag" src="hashflags/plaid15.png" />Plaid Cymru</a><br />
             </div>
             <div class="col-md-6">
+	            <a href='#' class="btn btn-default party_choice" id="dup"><img class="hashflag" src="hashflags/dup.png" />DUP</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="sf"><img class="hashflag" src="hashflags/sinnfein.png" />Sinn Fein</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="uup"><img class="hashflag" src="hashflags/uup.jpeg" />UUP</a><br />
-	            <a href='#' class="btn btn-default party_choice" id="dup"><img class="hashflag" src="hashflags/dup.png" />DUP</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="sdlp"><img class="hashflag" src="hashflags/sdlp.png" />SDLP</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="alliance"><img class="hashflag" src="hashflags/allianceparty.png" />Alliance</a><br />
 	            <a href='#' class="btn btn-default party_choice" id="ind">Independent</a><br />
