@@ -37,13 +37,15 @@ path {
 	min-height: 1px;
 }
 
-.results-and-change {
-	position: fixed;
-	z-index: 1000;
-	/*float: right;*/
-	right: 10px;
+@media screen and (min-width: 1000px) {
+	.results-and-change {
+		position: fixed;
+		z-index: 1000;
+		/*float: right;*/
+		right: 10px;
+	}
 }
-
+/*
 @media screen and (max-width: 600px) { .results-and-change {
 	position: relative;
-}}
+}}*/

@@ -38,8 +38,21 @@
 	    <img class="hashflag" src="hashflags/plaid15.png">Plaid Cymru: <span id="plaid_number">{{plaid_seats.count}}</span>
 	</ul> -->
 
-
+<!-- 	<svg width="300" height="200">
+		<rect width="50" height="{{tory_seats.count}}" style="fill:blue;" />
+		<rect width="50" height="{{labour_seats.count}}" style="fill:red;" />
+	</svg> -->
 	<table class="results-table">
+<!-- 		<tr>
+			<td valign="bottom"><div class="tory" width="30" height="{{tory_seats.count}}" style="background-color:#33C; min-height:{{tory_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="labour" width="30" height="{{labour_seats.count}}" style="background-color:#F00; min-height:{{labour_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="libdem" width="30" height="{{libdem_seats.count}}" style="background-color:#FC0; min-height:{{libdem_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="snp" width="30" height="{{snp_seats.count}}" style="background-color:#FF0; min-height:{{snp_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="ukip" width="30" height="{{ukip_seats.count}}" style="background-color:#c0c; min-height:{{ukip_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="green" width="30" height="{{green_seats.count}}" style="background-color:#00FF00; min-height:{{green_seats.count}}px;"></div></td>
+			<td valign="bottom"><div class="plaid" width="30" height="{{plaid_seats.count}}" style="background-color:#6c3; min-height:{{plaid_seats.count}}px;"></div></td>
+			<td valign="bottom"></td>
+		</tr> -->
 		<tr>
 			<td><img class="hashflag-large" src="hashflags/conservative.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/labour.png" /></td>
@@ -48,6 +61,7 @@
 			<td><img class="hashflag-large" src="hashflags/ukip.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/greens.png" /></td>
 			<td><img class="hashflag-large" src="hashflags/plaid15.png"></td>
+			<td><span class="glyphicon glyphicon-retweet" alt="undeclared seats"></span></td>
 		</tr>
 		<tr>
 			<td>{{tory_seats.count}}</td>
@@ -57,6 +71,7 @@
 			<td>{{ukip_seats.count}}</td>
 			<td>{{green_seats.count}}</td>
 			<td>{{plaid_seats.count}}</td>
+			<td>{{undeclared_seats.count}}</td>
 		</tr>
 
 	</table>

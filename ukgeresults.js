@@ -25,6 +25,7 @@ if (Meteor.isClient) {
     ukip_seats: Seats.find({party: "ukip"}),
     green_seats: Seats.find({party: "green"}),
     plaid_seats: Seats.find({party: "pc"}),
+    undeclared_seats: Seats.find({party: "undeclared"}),
   });
 
   Template.results.onRendered(function(){
@@ -68,6 +69,10 @@ if (Meteor.isClient) {
       Session.set("mouseover_path", event.currentTarget.id);
     },
     "click path": function(event) {
+      $("#tags-input").val(event.currentTarget.id);
+      $("#parties_list").show();
+    },
+      "click circle": function(event) {
       $("#tags-input").val(event.currentTarget.id);
       $("#parties_list").show();
     },
